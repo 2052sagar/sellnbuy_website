@@ -1,0 +1,67 @@
+body{
+    background:-webkit-gradient(linear, left 0, right 0, from(#06849e), to(#043066)) ;
+}
+
+.return{
+    padding-left:5px;
+}
+.return a{
+    text-decoration:none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 16px;
+    color: black;
+    background-color:gray;
+}
+.return a:hover{
+    background-color: red;
+}
+
+.content{
+    background: white ;
+    padding: 16px;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.container input[type='text'], .container input[type='password'], .container input[type='tel'], .container input[type='email']{
+    padding: 10px;
+    border: 1px solid #086FDF;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.cancelbtn{
+    width: 25%;
+    height: 40px;
+    color: white;
+    background-color:rgb(145,17,17);
+}
+
+.cancelbtn:hover{
+    cursor: pointer;
+    color: black;
+    background-color: rgba(145,17,17,0.7);
+}
+.forget{
+    float: right;
+}
+
+@media screen and (max-width:760px){
+    .content{
+        width:100%;
+    }
+    .cancelbtn{
+        width:30%;
+    }
+}
+@media screen and (max-width:510px){
+    .cancelbtn{
+        width:100%;
+    }
+}

@@ -1,0 +1,58 @@
+.post_container label{
+    font-size: 20px;
+}
+
+.post_container input[type='text'],  .post_container input[type='tel'], .post_container input[type='email'] , .post_container textarea, .post_container select{
+    border: 1px solid #086FDF;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.post_container span{
+    color: red;
+}
+
+
+[class*="col-"] 
+        {
+         float: left;
+         padding: 15px;
+        }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.adjust{
+    float:right;
+}
+.postbtn{
+    font-size: 20px;
+    width: 22%;
+    height: 40px;
+    color: white;
+    background-color:#0099e5;
+}
+
+.postbtn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
+@media all and (max-width: 780px){
+   .col-3{width:100%;}
+   .col-8{width:100%;}
+   .adjust{
+    float:left;
+}
+}
+

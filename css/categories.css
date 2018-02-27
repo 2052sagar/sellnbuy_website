@@ -1,0 +1,230 @@
+.categoriesheading{
+    text-align: center;
+    color: red;
+}
+.categoriesbody{
+    text-align: center;
+}
+.categoriesbody a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+.categoriesbody a:hover{
+    color: red;
+}
+
+.ad_grouping{
+    list-style-type: none;
+}
+
+.ad_grouping_img{
+    border: 1px solid #D1E0EE;  
+}
+
+.ad_grouping li{
+    border:1px solid #D1E0EE;
+    background-color: #F9F9F9;
+    box-shadow: 0 0 0.6em #ccc;
+}
+.ad_grouping li:hover{
+    background-color: white;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index:1;
+	left: 0;
+	top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.58);
+    padding-top: 60px;
+}
+.modal-content{
+    background:#16a7bb;
+    padding: 16px;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 75%; /* Could be more or less, depending on screen size */
+}
+.animate-detail{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+    
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.main-box, .main-boxcontent{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-flex: 1;
+}
+
+.box{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-flex: 1;
+}
+.box1{
+    width: 20%;
+    background:gray;
+    border:1px solid #D1E0EE;
+    margin:10px;
+    padding-right:10px;
+}
+.box2{
+    width: 75%;
+    margin:10px;
+    margin-top:0px;
+}
+.ad-description{
+    background-color: white;
+    border:1px solid #D1E0EE;
+    margin: 10px;
+}
+.ad-description p{
+    padding-left:10px;
+}
+.ad-buyerinfo{
+    background: white;
+    width: 48%;
+    border:1px solid #D1E0EE;
+    margin:10px;
+    margin-top: 0px;
+    padding-right:10px;
+}
+.seller-contact{
+    background: white;
+    width: 48%;
+    margin:10px;
+    margin-left:0px;
+    margin-top: 0px;
+    border:1px solid #D1E0EE;
+}
+.front{
+    width:48%;
+    padding:10px;
+}
+.back{
+    width:48%;
+    padding-left:10%;
+}
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1100px) {
+    .col-9 {width:95%;}
+    .col-2 {width:25%; }
+    .col-13 {width:70%}
+    .ad-buyerinfo{
+    width: 47%;
+    }
+    .seller-contact{
+        width: 46%;
+    }
+    .back{
+        padding-left:0px;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    .col-9 {width:95%;}
+    .col-2 {width:35%; }
+    .col-13 {width:60%}
+    .modal-content{
+        width:85%;
+    }
+    .main-boxcontent{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+    }
+    .box1{
+    width: 30%;
+    margin:5px; 
+    }
+    .box2{
+        width: 65%;
+        margin:5px;
+    }
+    .ad-buyerinfo{
+    width: 92%;
+    padding-right:5px;
+    }
+    .seller-contact{
+        width: 92%;
+        margin:10px;
+    }
+    .front{
+    padding:5px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .col-9 {width:95%;}
+    .col-2 {width:40%; }
+    .col-13 {width:55%}
+    .modal-content{
+        width:90%;
+    }
+    .box{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+    }
+    .front, .back{
+        padding:10px;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+    .box1{
+    width: 45%;
+    margin:3px; 
+    }
+    .box2{
+        width: 55%;
+        margin:3px;
+        font-size:14px;
+    }
+}
+.first{
+    display:block;
+}
+.second{
+    display:none;
+}
+
+@media screen and (max-width:450px) {
+    .first{
+        display:none;
+    }
+    .second{
+        display:block;
+    }
+}
+
+
+

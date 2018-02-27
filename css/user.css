@@ -1,0 +1,78 @@
+.user-main{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-flex: 1; 
+}
+.user-container{
+    width: 30%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+.ad-container{
+    width: 75%;
+}
+.user-info{
+    border-right:3px dashed #D1E0EE;
+    border-bottom:3px dashed #D1E0EE;
+    margin:10px;
+    margin-top:0px;
+}
+.ad-buyerinfo{  
+    width: 97%; 
+}
+
+@media screen and (max-width:850px) {
+    .user-container{
+        width: 40%;
+    }
+    .ad-container{
+        width: 60%;
+    }
+    .user-info{
+        font-size:14px;
+    }
+
+}
+@media screen and (max-width:450px) {
+    .topnav li a{
+        font-size:14px;
+    }
+    .user-container{
+        width: 50%;
+    }
+    .ad-container{
+        width: 50%;
+    }
+    .user-info{
+        font-size:12px;
+    }
+}
+
+.big{
+    display: block;
+}
+.small{
+    display:none;
+}
+.verysmall{display:none;}
+@media screen and (max-width:750px) {
+    .big{
+        display: none;
+    }
+    .small{
+        display:block;
+    }
+    .verysmall{display:none;}
+    .af-bf{font-size:25px;}
+}
+@media screen and (max-width:450px) {
+    .big{
+        display: none;
+    }
+    .small{
+        display:none;
+    }
+    .verysmall{display:block;}
+    .af-bf{font-size:20px;}
+}
